@@ -1,4 +1,4 @@
-name: Deploy microservice
+name: deploy microservice
 on: 
 #  push:
 #   branches:
@@ -9,7 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: Deployment_secrets
+    environment: deploymentvars
 
     env:
       CONTAINER_REGISTRY: ${{ secrets.CONTAINER_REGISTRY }}
