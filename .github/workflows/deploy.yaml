@@ -28,7 +28,7 @@ jobs:
       - uses: tale/kubectl-action@v1
         with:
           base64-kube-config: ${{ secrets.KUBE_CONFIG }}
-          kubectl-version: v1.30
+          kubectl-version: v1.30.2
       - name: Deploy
         run: ./scripts/deploy.sh
 
